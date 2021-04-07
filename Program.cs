@@ -7,7 +7,8 @@ namespace EmpWage1
         static void Main(string[] args)
         {
             //constants
-            int PRESENT = 1;
+            int FULL_TIME = 1;
+            int PART_TIME = 2;
             int EMP_RATE_PER_HR = 20;
 
             //LOCAL VARIABLES
@@ -16,14 +17,18 @@ namespace EmpWage1
 
             //inbuilt class
             Random random = new Random();
-            int employeeCheck = random.Next(0, 2);
+            int employeeCheck = random.Next(0, 3);
 
             Console.WriteLine("random value" + employeeCheck);
 
             //Selection statements
-            if(employeeCheck== PRESENT)
+            if(employeeCheck== FULL_TIME)
             {
                 empHrs = 8;
+            }
+            else if(employeeCheck== PART_TIME)
+            {
+                empHrs = 4;
             }
             else
             {
