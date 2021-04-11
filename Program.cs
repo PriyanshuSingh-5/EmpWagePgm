@@ -4,41 +4,47 @@ namespace EmpWage1
 {
     class Program
     {
+       
+           public const int Full_TIME = 1;
+        public const int PART_TIME = 2;
+        public const int EMP_RATE_PER_HR = 20;
+        public const int WORKING_DAYS = 20;
         static void Main(string[] args)
         {
-            //constants
-            int FULL_TIME = 1;
-            int PART_TIME = 2;
-            int EMP_RATE_PER_HR = 20;
-            int EMP_TOTAL_WORKING_DAYS_PER_MONTH = 20;
-
-            //LOCAL VARIABLES
+            //local variables
             int empHrs = 0;
             int empWage = 0;
+            int totalEmpWage = 0;
 
             //inbuilt class
             Random random = new Random();
-            int employeeCheck = random.Next(0, 4);
+            for (int day = 0; day < WORKING_DAYS; day++)
+            {
+                int employeeCheck = random.Next(0, 3);
 
-            Console.WriteLine("random value" + employeeCheck);
+                //Console.WriteLine("random value " + employeeCheck);
+                //selection statements
 
-            //Selection statements
-            if (employeeCheck == FULL_TIME)
-            {
-                empHrs = 8;
+                switch (employeeCheck)
+                {
+                    case Full_TIME:
+                        empHrs = 8;
+                        break;
+
+                    case PART_TIME:
+                        empHrs = 4;
+                        break;
+
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                //computation
+                empWage = EMP_RATE_PER_HR * empHrs;
+                totalEmpWage += empWage;//totalEmpWage=totalWage+empWage
             }
-            else if (employeeCheck == PART_TIME)
-            {
-                empHrs = 4;
-            }
-            else
-            {
-                empHrs = 0;
-            }
-            //Computations
-            empWage = EMP_RATE_PER_HR * empHrs * EMP_TOTAL_WORKING_DAYS_PER_MONTH;
-            Console.WriteLine("Employee wage per MONTH" + empWage);
-            Console.Read();
+            Console.WriteLine("Emp wage for 20 days " + totalEmpWage);
+            Console.Read(); ;
         }
     }
 }
