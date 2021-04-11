@@ -4,22 +4,27 @@ namespace EmpWage1
 {
     class Program
     {
-       
-           public const int Full_TIME = 1;
+        //constants
+        public const int Full_TIME = 1;
         public const int PART_TIME = 2;
         public const int EMP_RATE_PER_HR = 20;
-        public const int WORKING_DAYS = 20;
+        public const int MAX_WORKING_DAYS = 20;
+        public const int MAX_WORKING_HRS = 100;
         static void Main(string[] args)
         {
             //local variables
             int empHrs = 0;
             int empWage = 0;
             int totalEmpWage = 0;
+            int hrs = 0;
+            int WorkingDays = 1;
+
 
             //inbuilt class
             Random random = new Random();
-            for (int day = 0; day < WORKING_DAYS; day++)
+            while (hrs < MAX_WORKING_HRS && WorkingDays <= MAX_WORKING_DAYS)
             {
+                WorkingDays++;
                 int employeeCheck = random.Next(0, 3);
 
                 //Console.WriteLine("random value " + employeeCheck);
@@ -41,10 +46,13 @@ namespace EmpWage1
                 }
                 //computation
                 empWage = EMP_RATE_PER_HR * empHrs;
+                hrs = empHrs;
                 totalEmpWage += empWage;//totalEmpWage=totalWage+empWage
             }
-            Console.WriteLine("Emp wage for 20 days " + totalEmpWage);
-            Console.Read(); ;
+            Console.WriteLine("Emp wage for " + WorkingDays + "days" + totalEmpWage);
+            Console.WriteLine("Working hrs " + hrs);
+            Console.Read();
         }
     }
 }
+
