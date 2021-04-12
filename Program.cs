@@ -4,14 +4,14 @@ namespace EmpWage1
 {
     class Program
     {
-		const int EmpWagePerHr = 20;
+		/*const int EmpWagePerHr = 20;
 		const int Num_Of_Working_Days = 20;
-		const int Max_Working_Hrs = 100;
+		const int Max_Working_Hrs = 100;*/
 		const int Is_FullTime = 1, Is_PartTime = 2;
-		public static int computeEmpWage()
+		public static int computeEmpWage(string company, int EmpRatePerHr, int Num_of_Working_Days, int MaxHrsPerMonth)
 		{
 			int EmpHrs = 0, EmpWage = 0, TotalHrs = 0, WorkingDays = 0;
-			while (TotalHrs < Max_Working_Hrs && WorkingDays < Num_Of_Working_Days)
+			while (TotalHrs < MaxHrsPerMonth && WorkingDays < Num_of_Working_Days)
 			{
 				WorkingDays++;
 				Random random = new Random();
@@ -34,16 +34,18 @@ namespace EmpWage1
 				TotalHrs = TotalHrs + EmpHrs;
 				Console.WriteLine(" Day : " + WorkingDays + " Employee Hrs : " + TotalHrs);
 			}
-			EmpWage = EmpHrs * EmpWagePerHr;
+			EmpWage = EmpHrs * EmpRatePerHr;
 			Console.WriteLine("Total Emp Wages = " + EmpWage);
 			return EmpWage;
 		}
 		static void Main(string[] args)
 		{
 			Console.WriteLine("welcome to employee Program");
-			computeEmpWage();
+			Console.WriteLine("Employee wage for DMart");
+			computeEmpWage("DMart", 20, 2, 10);
+			Console.WriteLine("Employee wage for Reliance");
+			computeEmpWage("Reliance", 10, 4, 20);
 		}
 	}
 }
-
 
