@@ -4,55 +4,46 @@ namespace EmpWage1
 {
     class Program
     {
-        //constants
-        public const int Full_TIME = 1;
-        public const int PART_TIME = 2;
-        public const int EMP_RATE_PER_HR = 20;
-        public const int MAX_WORKING_DAYS = 20;
-        public const int MAX_WORKING_HRS = 100;
-        static void Main(string[] args)
-        {
-            //local variables
-            int empHrs = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
-            int hrs = 0;
-            int WorkingDays = 1;
-
-
-            //inbuilt class
-            Random random = new Random();
-            while (hrs < MAX_WORKING_HRS && WorkingDays <= MAX_WORKING_DAYS)
-            {
-                WorkingDays++;
-                int employeeCheck = random.Next(0, 3);
-
-                //Console.WriteLine("random value " + employeeCheck);
-                //selection statements
-
-                switch (employeeCheck)
-                {
-                    case Full_TIME:
-                        empHrs = 8;
-                        break;
-
-                    case PART_TIME:
-                        empHrs = 4;
-                        break;
-
-                    default:
-                        empHrs = 0;
-                        break;
-                }
-                //computation
-                empWage = EMP_RATE_PER_HR * empHrs;
-                hrs = empHrs;
-                totalEmpWage += empWage;//totalEmpWage=totalWage+empWage
-            }
-            Console.WriteLine("Emp wage for " + WorkingDays + "days" + totalEmpWage);
-            Console.WriteLine("Working hrs " + hrs);
-            Console.Read();
-        }
-    }
+		const int EmpWagePerHr = 20;
+		const int Num_Of_Working_Days = 20;
+		const int Max_Working_Hrs = 100;
+		const int Is_FullTime = 1, Is_PartTime = 2;
+		public static int computeEmpWage()
+		{
+			int EmpHrs = 0, EmpWage = 0, TotalHrs = 0, WorkingDays = 0;
+			while (TotalHrs < Max_Working_Hrs && WorkingDays < Num_Of_Working_Days)
+			{
+				WorkingDays++;
+				Random random = new Random();
+				int empCheck = random.Next(1, 3);
+				switch (empCheck)
+				{
+					case Is_FullTime:
+						EmpHrs = 8;
+						Console.WriteLine("Employee is Full Time");
+						break;
+					case Is_PartTime:
+						EmpHrs = 4;
+						Console.WriteLine("Employee is Part Time");
+						break;
+					default:
+						EmpHrs = 0;
+						Console.WriteLine("Default Value");
+						break;
+				}
+				TotalHrs = TotalHrs + EmpHrs;
+				Console.WriteLine(" Day : " + WorkingDays + " Employee Hrs : " + TotalHrs);
+			}
+			EmpWage = EmpHrs * EmpWagePerHr;
+			Console.WriteLine("Total Emp Wages = " + EmpWage);
+			return EmpWage;
+		}
+		static void Main(string[] args)
+		{
+			Console.WriteLine("welcome to employee Program");
+			computeEmpWage();
+		}
+	}
 }
+
 

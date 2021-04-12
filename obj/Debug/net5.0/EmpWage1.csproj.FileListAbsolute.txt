@@ -1,0 +1,16 @@
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.exe
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.deps.json
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.runtimeconfig.json
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.runtimeconfig.dev.json
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.dll
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\ref\EmpWage1.dll
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\EmpWage1.pdb
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.csprojAssemblyReference.cache
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.AssemblyInfoInputs.cache
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.AssemblyInfo.cs
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.csproj.CoreCompileInputs.cache
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.dll
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\ref\EmpWage1.dll
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.pdb
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.genruntimeconfig.cache
