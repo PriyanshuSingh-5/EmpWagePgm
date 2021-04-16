@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace EmpWage1
 {
-    class EmpWageBuilderArray
-    {
+	class EmpWageBuilderArray
+	{
 		public const int IS_PART_TIME = 1;
 		public const int IS_FULL_TIME = 2;
 
 		private int numOfCompany = 0;
 		private CompanyEmpWage[] companyEmpWageArray;
+		private Dictionary<string, CompanyEmpWage> companyToEmpWageMap;
 
 		public EmpWageBuilderArray()
 		{
@@ -54,11 +55,13 @@ namespace EmpWage1
 				totalEmpHrs += empHrs;
 				Console.WriteLine("Days" + totalWorkingDays + "EmpHrs : " + empHrs);
 			}
-			return totalEmpHrs = companyEmpWage.empRatePerHour;
+			return totalEmpHrs * companyEmpWage.empRatePerHour;
 
 		}
-
+		public int getTotalWage(string company) //using get method
+		{
+			return this.companyToEmpWageMap[company].totalEmpWage;
+		}
 
 	}
-
 }

@@ -7,10 +7,28 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "EmpWage1/1.0.0": {
+        "dependencies": {
+          "NLog.Config": "4.7.9"
+        },
         "runtime": {
           "EmpWage1.dll": {}
         }
-      }
+      },
+      "NLog/4.7.9": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.9.12899"
+          }
+        }
+      },
+      "NLog.Config/4.7.9": {
+        "dependencies": {
+          "NLog": "4.7.9",
+          "NLog.Schema": "4.7.9"
+        }
+      },
+      "NLog.Schema/4.7.9": {}
     }
   },
   "libraries": {
@@ -18,6 +36,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "NLog/4.7.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y0dKY5d506ZVcb8dTMp3BSb+jUGaFu/ArvRkgn4daDWKf7qqFXjEFYjqoyTrWkcNguqS6avkwICS0hsFsr4BzA==",
+      "path": "nlog/4.7.9",
+      "hashPath": "nlog.4.7.9.nupkg.sha512"
+    },
+    "NLog.Config/4.7.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qZp3XTzpoWue0EL51DWlgqbBuXsCBpR/80lTqsgxzIhcnR9eMgCSjDt3acgdBLEHNkxVDd5/COOIXyEOQUJf7g==",
+      "path": "nlog.config/4.7.9",
+      "hashPath": "nlog.config.4.7.9.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vTDiVjd07WHpyOS2sFIsLm+cUeAwV84w4/EM6VQN53VKFVKNcMpttEXx+scmvAM7Zwx/msKhCptqcS8W2TbjXg==",
+      "path": "nlog.schema/4.7.9",
+      "hashPath": "nlog.schema.4.7.9.nupkg.sha512"
     }
   }
 }

@@ -14,3 +14,6 @@ C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.
 C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\ref\EmpWage1.dll
 C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.pdb
 C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.genruntimeconfig.cache
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\NLog.config
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\bin\Debug\net5.0\NLog.dll
+C:\Users\K.R.DHASHNIGA\source\repos\EmpWage1\EmpWage1\obj\Debug\net5.0\EmpWage1.csproj.CopyComplete
