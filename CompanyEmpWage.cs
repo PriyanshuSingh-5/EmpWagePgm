@@ -10,30 +10,30 @@ namespace EmpWage1
     {
 
 		public string company;
-        public int empRatePerHour;
+		public int empRatePerHour;
 		public int numOfWorkingDays;
 		public int maxHoursPerMonth;
 		public int totalEmpWage;
-
-		public CompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+		public int dailyWage;
+		public int TotalWageAlongWithDailyWage;
+		public CompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) //parameterized constructer
 		{
+			//invoke current class constructor
 			this.company = company;
 			this.empRatePerHour = empRatePerHour;
 			this.numOfWorkingDays = numOfWorkingDays;
 			this.maxHoursPerMonth = maxHoursPerMonth;
 		}
-		public int Addition(int number1,int number2)
-        {
-			return number1 + number2;
-        }
-		public void setTotalEmpWage(int totalEmpWage)
-        {
-			this.totalEmpWage = totalEmpWage;
-        }
-		public string toString()
+
+		public void setTotalEmpWage(int totalEmpWage) //set method
 		{
-			return "total EmpWage for company :" + this.company + " is :" + this.totalEmpWage;
+			this.totalEmpWage = totalEmpWage;
 		}
 
+		public string toString() //instance method 
+		{
+
+			return "\nTotal Emp Wage for Company : " + this.company + " is :" + this.totalEmpWage + "\nDaily Wage for Company : " + this.company + " is :" + this.dailyWage + "\nTotal  Emp wage along with daily Wage is " + this.TotalWageAlongWithDailyWage;
+		}
 	}
 }
